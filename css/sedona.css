@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;   
+}
+h2{
+    font-size: 1.8rem;
+}
+
+header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+}
+
+.menu{    
+    display: flex;
+    justify-content:space-around;
+}
+
+.menuBlock{   
+    padding-top: 20px;   
+}
+
+.logo{   
+    width: 100px;
+}
+
+.logoBackground{
+ background-color: rgb(28, 66, 90);
+ width: 140px;
+ height: 140px;
+ margin-left: -25px;
+ border-radius: 10px;
+ transform: rotate(45deg);
+ top: -80px;
+ position: absolute; 
+}
+
+.logo>img{
+    top: -20px;
+    margin-left: -11px;
+    width: 110px;
+    height: 110px;
+    position: absolute;   
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    background: white url(/Users/vitalybazylo/Documents/Sedona/img/Sedona_main.jpg) no-repeat;
+    height: 750px;   
+}
+.mainText{
+    margin: 0 auto;
+}
+.welcome{
+    margin-top: 20px;
+    font-size: 3.5rem;
+    color: rgb(28, 66, 90);
+    font-family: Quicksandt, sans-serif;
+    font-weight: bold;
+}
+
+.gorgeus{
+    font-size: 3em;
+    color: rgb(117, 100, 92);
+    text-transform: lowercase;
+    font-family: MarckScript, sans-serif;
+}
+.sedonaMain{
+    font-size: 6em;
+    color: white;
+    font-weight: bold;
+}
+.sucks{
+    font-size: 3em;
+    color: white;
+    font-family: MarckScript, sans-serif;
+    text-transform: none;
+    text-align: center;
+}
+
+.figuere{
+    display: inline-flex;
+}
+.triangl{
+    margin-top: -243px;
+    position: absolute;
+    width: 0; 
+    height:0;
+    border-bottom: 400px solid rgb(255, 255, 255);
+}
+
+.triangleLeft{
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    transform: rotate(90deg);
+}
+.triangl1{
+    margin-left: 10%;
+}
+.triangl2{
+    margin-left: 35%;
+}
+.triangleRight{
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    transform: rotate(270deg);
+}
+.triangl3{
+    margin-left: 60%;
+}
+.triangl4{
+    margin-left: 85%;
+}
+
+.tittle{
+    margin-top: 70px;
+    text-align: center;   
+}
+
+.tittle h2{
+    margin: 50px auto;
+}
+
+.infoBlock-1{
+    margin-top: 50px;
+}
+
+.discriptionTop{
+    margin-top: 25px;
+    display: inline-flex;
+    height:500px;  
+    text-align: center;     
+}
+
+.discriptionBlock *{
+    margin-top: 50px;
+    color: white;   
+}
+
+.discriptionBlock{
+    background-color: rgb(28, 66, 90);
+    flex-basis: 35%;
+    padding-top: 75px;  
+}
+
+.discriptionPhoto{
+    flex-basis: 65%;
+}
+.discriptionPhoto img{
+    width: 100%;
+    height:500px;
+}
+
+.discriptionBottom{
+    width: 100%;
+    height:500px; 
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;  
+}
+
+.discriptionBottom *{
+    margin-top: 50px;
+}
+
+.infoBlock-2 .discriptionTop{
+    flex-direction: row-reverse
+}
+
+.infoBlock-2 .discriptionBottom{
+    background-color:rgb(238, 238, 238);
+    height: 400px;
+}
+
+.bottomTittle{
+    text-align: center;
+}
+
+.bottomTittle h2{
+    margin-top: 75px;
+}
+
+.bottomTittle p{
+    color: grey;
+    margin-top: 50px;
+}
+.form{
+    width: 100%;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+
+.formBlock{
+    margin-top: 50px;
+    width: 600px;
+    background-color:white;
+    border: white;
+}
+
+.formHeader{
+    height: 50px;
+    padding-top: 25px;
+    background-color:rgb(117, 100, 92);
+    color: white;
+    text-align: center;
+}
+
+.formBody p{
+    margin:50px;
+}
+
+.formBody input{
+    width: 340px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -75px;
+}
+
+button{
+    width: 500px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 50px;
+    background-color: rgb(28, 66, 90);
+    border-style: none;
+    color: white;
+}
+
+.adult, .child{
+    display: inline-block;
+    margin-top: -50px;;
+}
+
+.adult input{
+    width: 100px;
+    margin-left: 200px;
+} 
+
+.child input{
+    width: 100px;
+    margin-left: 150px;
+}
+
+.child{
+    margin-left: 70px;
+}
+
+.map{
+    margin-top: 125px;
+    height: 500px;
+}
+
+footer{
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 120px;
+    width: 100%;
+    background: white;
+    opacity: 0.8;
+}
+
+.visitSedona{
+    margin-top: 50px;
+    width: 25%;
+    color: black;
+    font-weight: bold;
+}
+
+.socialButton {
+    margin-top: 35px;
+    display: inline-flex;
+}
+.socialButton a{
+    
+    margin-left: 10px;
+}
+.col-3{
+    width: 25%;
+}
