@@ -54,8 +54,8 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; 
-    background: white url(/Users/vitalybazylo/Documents/Sedona/img/Sedona_main.jpg) no-repeat;
-    height: 750px;   
+    background: white url(../img/Sedona_main.jpg) no-repeat;
+    height: 750px;
 }
 .mainText{
     margin: 0 auto;
