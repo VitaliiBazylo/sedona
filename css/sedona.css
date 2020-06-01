@@ -13,18 +13,14 @@ header{
     background-color: white;
     position: fixed;
     width: 100%;
-    height: 60px;
-    z-index: 2;
+    padding: 20px 0;
 }
 
-.menu{    
+.navigation{    
     display: flex;
     justify-content:space-around;
 }
 
-.menuBlock{   
-    padding-top: 20px;   
-}
 
 .logo {
     width: 100px;
@@ -41,7 +37,7 @@ header{
  position: absolute; 
 }
 
-.logo>img{
+.logo>img {
     top: -20px;
     margin-left: -11px;
     width: 110px;
@@ -49,7 +45,7 @@ header{
     position: absolute;   
 }
 
-.top{
+.top {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -114,10 +110,10 @@ header{
     border-right: 50px solid transparent;
     transform: rotate(270deg);
 }
-.triangl3{
+.triangl3 {
     margin-left: 60%;
 }
-.triangl4{
+.triangl4 {
     margin-left: 85%;
 }
 
