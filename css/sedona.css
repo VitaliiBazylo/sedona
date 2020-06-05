@@ -1,288 +1,288 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 1.1rem;   
-}
-h2{
-    font-size: 1.8rem;
+    font-size: 1rem;
+    line-height: 160%;
 }
 
-header{
+h2 {
+    font-size: 1.3rem;
+}
+
+header {
     background-color: white;
-    position: fixed;
+    position: sticky;
+    padding: 20px 70px;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav {    
     width: 100%;
-    padding: 20px 0;
-}
-
-.navigation{    
-    display: flex;
-    justify-content:space-around;
-}
-
-
-.logo {
-    width: 100px;
-}
-
-.logoBackground {
- background-color: rgb(28, 66, 90);
- width: 140px;
- height: 140px;
- margin-left: -25px;
- border-radius: 10px;
- transform: rotate(45deg);
- top: -80px;
- position: absolute; 
-}
-
-.logo>img {
-    top: -20px;
-    margin-left: -11px;
-    width: 110px;
-    height: 110px;
-    position: absolute;   
-}
-
-.top {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    background: white url(../img/Sedona_main.jpg) no-repeat;
-    height: 750px;
-}
-.mainText{
-    margin: 0 auto;
-}
-.welcome{
-    margin-top: 20px;
-    font-size: 3.5rem;
-    color: rgb(28, 66, 90);
-    font-family: Quicksandt, sans-serif;
-    font-weight: bold;
-}
-
-.gorgeus{
-    font-size: 3em;
-    color: rgb(117, 100, 92);
-    text-transform: lowercase;
-    font-family: MarckScript, sans-serif;
-}
-.sedonaMain{
-    font-size: 6em;
-    color: white;
-    font-weight: bold;
-}
-.sucks{
-    font-size: 3em;
-    color: white;
-    font-family: MarckScript, sans-serif;
-    text-transform: none;
-    text-align: center;
-}
-
-.figuere{
     display: inline-flex;
+    justify-content:space-between;    
 }
-.triangl{
-    margin-top: -243px;
+
+.nav__item {
+    width: 180px;
+}
+
+.nav__item a {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.nav__logo {
+    top:-25px;
+    position: relative;
+}
+
+.nav img {
     position: absolute;
-    width: 0; 
-    height:0;
-    border-bottom: 400px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
 }
 
-.triangleLeft{
-    border-left: 50px solid transparent;
-    border-right: 0px solid transparent;
-    transform: rotate(90deg);
-}
-.triangl1{
-    margin-left: 10%;
-}
-.triangl2{
-    margin-left: 35%;
-}
-.triangleRight{
-    border-left: 0px solid transparent;
-    border-right: 50px solid transparent;
-    transform: rotate(270deg);
-}
-.triangl3 {
-    margin-left: 60%;
-}
-.triangl4 {
-    margin-left: 85%;
+.main-img {
+    width: 100%;
+    margin-bottom: 40px;    
 }
 
-.tittle{
-    margin-top: 70px;
-    text-align: center;   
+.main__tittle {
+    padding:50px 0;
+    text-align: center;
+    margin-bottom: 20px;   
 }
 
-.tittle h2{
-    margin: 50px auto;
+.main__tittle h2 {
+    margin-bottom: 35px;
+}
+.sight-block p {
+    padding: 0 15%;
+}
+.sight-block h2 {
+    padding: 0 30%;
 }
 
-.infoBlock-1{
-    margin-top: 50px;
-}
-
-.discriptionTop{
-    margin-top: 25px;
+.sight__discription__header {
     display: inline-flex;
-    height:500px;  
-    text-align: center;     
+    height:300px;  
+    text-align: center; 
+    color: white;     
 }
 
-.discriptionBlock *{
-    margin-top: 50px;
-    color: white;   
+.sight__discription__header__tittle * {  
+    margin-bottom: 25px;
 }
 
-.discriptionBlock{
-    background-color: rgb(28, 66, 90);
+.sight__discription__header__tittle {
+    background-color: #81b3d2;
     flex-basis: 35%;
-    padding-top: 75px;  
+    padding: 50px 0;
 }
 
-.discriptionPhoto{
+.sight__discription-photo {
     flex-basis: 65%;
 }
-.discriptionPhoto img{
-    width: 100%;
-    height:500px;
+
+.sight__discription-photo img {
+    width:100%;
+    height: 100%;
+    object-fit:cover;    
 }
 
-.discriptionBottom{
-    width: 100%;
-    height:500px; 
+.sight-block-1 .sight__discription__footer img {
+    height: 73px;
+    width: 73px;
+}
+
+.sight__discription__footer {
+    width: 100%; 
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;  
+    padding: 80px 0;
 }
 
-.discriptionBottom *{
-    margin-top: 50px;
+.sight__small__block{
+    width: 35%;
 }
 
-.infoBlock-2 .discriptionTop{
+.sight__discription__footer p {
+    color: grey;
+}
+
+.sight__discription__footer * {
+    margin-bottom: 25px;
+}
+
+.sight-block-2 .sight__discription__header {
     flex-direction: row-reverse
 }
 
-.infoBlock-2 .discriptionBottom{
+.sight-block-2 .sight__discription__footer {
+    padding: 50px 0;
+    height: 200px;
     background-color:rgb(238, 238, 238);
-    height: 400px;
 }
 
-.bottomTittle{
+footer {
+    position: relative;
+    width: 100%;
+}
+
+.order {
+    position: relative;
+}
+
+.order__tittle {
+    padding: 55px 0;
     text-align: center;
+    margin-bottom: 100px;
 }
 
-.bottomTittle h2{
-    margin-top: 75px;
+.order__tittle h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
 }
 
-.bottomTittle p{
+.order__tittle p {
     color: grey;
-    margin-top: 50px;
 }
-.form{
+
+.form__block {
+    margin-top: -100px;
     width: 100%;
     position: absolute;
     display: inline-flex;
-    justify-content: space-between;
-    height: 500px;
+    justify-content: center;
+    z-index: 2;
 }
 
-
-.formBlock{
-    margin-top: 50px;
-    width: 600px;
+.form {
+    width: 700px;
     background-color:white;
     border: white;
 }
 
-.formHeader{
-    height: 50px;
-    padding-top: 25px;
+.form__header {
+    padding: 31px;
     background-color:rgb(117, 100, 92);
     color: white;
     text-align: center;
 }
 
-.formBody p{
-    margin:50px;
+.form__header h2 {
+    font-size: 1.5rem;
 }
 
-.formBody input{
-    width: 340px;
-    position: absolute;
-    margin-left: 200px;
-    margin-top: -75px;
+.form__body {
+    padding: 70px;
 }
 
-button{
-    width: 500px;
-    height: 50px;
-    margin-top: 25px;
-    margin-left: 50px;
-    background-color: rgb(28, 66, 90);
-    border-style: none;
-    color: white;
-}
-
-.adult, .child{
-    display: inline-block;
-    margin-top: -50px;;
-}
-
-.adult input{
-    width: 100px;
-    margin-left: 200px;
-} 
-
-.child input{
-    width: 100px;
-    margin-left: 150px;
-}
-
-.child{
-    margin-left: 70px;
-}
-
-.map{
-    margin-top: 125px;
-    height: 500px;
-}
-
-footer{
-    position: absolute;
-    display: inline-flex;
-    justify-content: space-around;
-    height: 120px;
-    width: 100%;
-    background: white;
-    opacity: 0.8;
-}
-
-.visitSedona{
-    margin-top: 50px;
-    width: 25%;
-    color: black;
+.check__in, .check__out, .adult, .child {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
     font-weight: bold;
 }
 
-.socialButton {
-    margin-top: 35px;
+.check__in-input, .check__out-input {
+    flex-basis: 70%;
+}
+
+.form__age__block {
     display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
 }
-.socialButton a{
+
+.form__age__block p {
+    margin-right: 65px;
+}
+
+.adult-input, .child-input {
+    width: 100px;
+}
+
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #81b3d2;
+    border-style: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* .map{
+    position: relative;
+} */
+.map img {
+    width: 100%;
+    height: 690px;
+    object-fit:cover;
     
-    margin-left: 10px;
 }
-.col-3{
-    width: 25%;
+
+.footer__footer {
+    top:900px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-around;
+    /* height: 140px; */
+    width: 100%;
+    background: white;
+    padding: 40px 0;
+    opacity: 0.8;
+}
+
+.footer__block {
+    flex-basis: 280px;
+}
+
+.hashtag {
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.social__button__group {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.social__button img {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.social__button {
+    padding: 15px;
+    margin: 5px;
+    background-color: #81b3d2;
+    opacity: 1;
+    height: 30px;
+    width: 27px;  
+}
+
+.html__academy {
+    margin-top: 10px;
+    
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.html__academy p{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.html__academy img {
+    height: 50px;
 }
